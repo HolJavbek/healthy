@@ -7,8 +7,9 @@
   <title>Healthy Switcher</title>
 
   <link rel="stylesheet" href="src/css/normalize.css">
+  <link rel="stylesheet" href="src/css/slick.css">
+  <link rel="stylesheet" href="src/css/animate.css">
   <link rel="stylesheet" href="src/css/main.css">
-
 </head>
 
 <body>
@@ -16,15 +17,17 @@
   <header class="header">
     <div class="container">
       <div class="header-nav">
-        <div class="logo">
-          <img src="src/img/Logo.png" alt="Logo" class="logo-image">
-          <span class="logo-text">Healthy Switcher</span>
-        </div>
+        <a href="#" class="logo-link">
+          <div class="logo">
+            <img src="src/img/Logo.png" alt="Logo" class="logo-image">
+            <span class="logo-text">Healthy Switcher</span>
+          </div>
+        </a>
         <div class="header-links">
-          <a href="#" class="header-link active">Menu</a>
-          <a href="#" class="header-link">Recipes</a>
-          <a href="#" class="header-link">Chefs</a>
-          <a href="#" class="header-link">Contacts</a>
+          <a href="#dishes" class="header-link active scroll-to">Menu</a>
+          <a href="#recipes" class="header-link scroll-to">Recipes</a>
+          <a href="#chefs" class="header-link scroll-to">Chefs</a>
+          <a href="#contacts" class="header-link scroll-to">Contacts</a>
         </div>
       </div>
 
@@ -33,13 +36,13 @@
 
     <div class="container">
       <div class="header-hero">
-        <h1 class="header-title">Your <span class="bold">favourite food</span> delivered <span class="bold">hot &
+        <h1 class="header-title wow fadeInLeft" data-wow-delay="0.4s">Your <span class="bold">favourite food</span> delivered <span class="bold">hot &
             fresh</span></h1>
-        <p class="header-text">HEALTHY SWITCHER chefs do all the prep work, like peeling, chopping & marinating, so you
+        <p class="header-text wow fadeInLeft" data-wow-delay="0.6s" >HEALTHY SWITCHER chefs do all the prep work, like peeling, chopping & marinating, so you
           can cook a fresh homemade dinner in just 15 minutes.</p>
-        <button class="button header-button">Order Now</button>
-        <div class="info-block">
-          <div class="info-block-item">
+        <button class="button header-button wow fadeInLeft" data-wow-delay="0.8s">Order Now</button>
+        <div class="info-block wow fadeInRight" data-wow-delay="0.8s">
+          <div class="info-block-item" data-wow-delay="0.7s">
             <img src="./src/img/ic_watch_later.png" alt="watch_later">
             <p>Today 10:00 am - 7:00 pm</p>
             <span>Working hours</span>
@@ -51,7 +54,7 @@
           </div>
           <div class="info-block-item">
             <img src="./src/img/ic_call.png" alt="call">
-            <p>+38 (063)833 24 15</p>
+            <a href="tel:+380638332415">+38 (063)833 24 15</a>
             <span>Call Online</span>
           </div>
         </div>
@@ -62,18 +65,30 @@
 
   <section class="section about">
     <div class="container">
-      <div class="about-wrapper">
+      <div class="about-wrapper wow slideInUp">
+
         <div class="title-wrapper">
           <h2 class="section-title about-title">The Basics Of Healthy Food</h2>
         </div>
-        <p class="about-text">In aliqua ea ullamco ad est ex non deserunt nulla. Consectetur sint ea aliquip aliquip
+        <p class="about-text wow fadeInLeft" data-wow-delay="0.7s">In aliqua ea ullamco ad est ex non deserunt nulla. Consectetur sint ea aliquip aliquip
           consectetur voluptate est. Eu minim dolore laboris enim mollit voluptate irure esse aliquip.</p>
-        <div class="slider">
-          <div class="slider-items">
-            <img class="slider-image" src="./src/img/placeholder.jpg" alt="dish1">
-            <img class="slider-image" src="./src/img/placeholder-1.jpg" alt="dish2">
+        
+        <div class="slider wow fadeInUp" data-wow-delay="0.3s">
+          <img class="slider-image" src="./src/img/placeholder.jpg" alt="dish1">
+          <img class="slider-image" src="./src/img/placeholder-1.jpg" alt="dish2">
+          <img class="slider-image" src="./src/img/placeholder.jpg" alt="dish3">
+          <img class="slider-image" src="./src/img/placeholder-1.jpg" alt="dish4">
+        </div>
+
+        <div class="slider-arrows">
+          <div class="left-arrow wow fadeInRight" data-wow-delay="0.4">
+            <img src="src/img/Left-arrow.png" alt="left">
+          </div>
+          <div class="right-arrow wow fadeInRight" data-wow-delay="0.4">
+            <img src="src/img/Right-arrow.png" alt="right">
           </div>
         </div>
+
       </div>
     </div>
     <!-- /.container -->
@@ -82,30 +97,30 @@
 
   <section class="section work">
     <div class="container">
-      <div class="title-wrapper work-wrapper">
+      <div class="title-wrapper work-wrapper wow slideInUp">
         <h2 class="section-title work-title">How It Works</h2>
         <div class="green-line"></div>
       </div>
       <div class="cards">
-        <div class="card">
+        <div class="card wow fadeInUp" data-wow-delay="0.2s">
           <h3 class="card-title">Pick meals</h3>
           <div class="card-line green-line"></div>
           <p class="card-text">Choose your meals from our diverse weekly menu. Find gluten or dairy free, low carb &
             veggie options.</p>
         </div>
-        <div class="card">
+        <div class="card wow fadeInUp" data-wow-delay="0.4s">
           <h3 class="card-title">Choose how often</h3>
           <div class="card-line green-line"></div>
           <p class="card-text">Our team of chefs do the prep work - no more chopping, measuring, or sink full of dishes!
           </p>
         </div>
-        <div class="card">
+        <div class="card wow fadeInUp" data-wow-delay="0.6s">
           <h3 class="card-title">fast deliveries</h3>
           <div class="card-line green-line"></div>
           <p class="card-text">Your freshly prepped 15-min dinner kits arrive on your doorstep in a refrigerated box.
           </p>
         </div>
-        <div class="card">
+        <div class="card wow fadeInUp" data-wow-delay="0.8s">
           <h3 class="card-title">tasty meals</h3>
           <div class="card-line green-line"></div>
           <p class="card-text">Gobble makes cooking fast, so you have more time to unwind and be with family.</p>
@@ -116,16 +131,16 @@
   </section>
   <!-- /.section work -->
 
-  <section class="section dishes">
+  <section id="dishes" class="section dishes">
     <div class="container">
-      <div class="title-wrapper dishes-wrapper">
+      <div class="title-wrapper dishes-wrapper  wow slideInUp" data-wow-delay="0.5s">
         <h2 class="section-title dishes-title">The Basics Of Healthy Food</h2>
         <div class="green-line"></div>
       </div>
 
       <div class="featured-meals">
-        <div class="meal">
-          <img src="/src/img/meal-1.jpg" alt="meal" class="meal-image">
+        <div class="meal wow fadeInUp" data-wow-delay="0.2s">
+          <img src="src/img/meal-1.jpg" alt="meal" class="meal-image">
           <div class="meal-info">
             <h3 class="meal-title">Featured Meal</h3>
             <h4 class="meal-subtitle">Served with french fries + drink</h4>
@@ -146,8 +161,8 @@
           </div>
         </div>
 
-        <div class="meal">
-          <img src="/src/img/meal-2.jpg" alt="meal" class="meal-image">
+        <div class="meal wow fadeInUp" data-wow-delay="0.4s">
+          <img src="src/img/meal-2.jpg" alt="meal" class="meal-image">
           <div class="meal-info">
             <h3 class="meal-title">Featured Meal</h3>
             <h4 class="meal-subtitle">Served with french fries + drink</h4>
@@ -166,7 +181,7 @@
           </div>
         </div>
 
-        <div class="meal">
+        <div class="meal wow fadeInUp" data-wow-delay="0.6s">
           <img src="src/img/meal-3.jpg" alt="meal" class="meal-image">
           <div class="meal-info">
             <h3 class="meal-title">Featured Meal</h3>
@@ -186,8 +201,8 @@
           </div>
         </div>
 
-        <div class="meal">
-          <img src="/src/img/meal-4.jpg" alt="meal" class="meal-image">
+        <div class="meal wow fadeInUp" data-wow-delay="0.2s">
+          <img src="src/img/meal-4.jpg" alt="meal" class="meal-image">
           <div class="meal-info">
             <h3 class="meal-title">Featured Meal</h3>
             <h4 class="meal-subtitle">Served with french fries + drink</h4>
@@ -206,8 +221,8 @@
           </div>
         </div>
 
-        <div class="meal">
-          <img src="/src/img/meal-5.jpg" alt="meal" class="meal-image">
+        <div class="meal wow fadeInUp" data-wow-delay="0.4s">
+          <img src="src/img/meal-5.jpg" alt="meal" class="meal-image">
           <div class="meal-info">
             <h3 class="meal-title">Featured Meal</h3>
             <h4 class="meal-subtitle">Served with french fries + drink</h4>
@@ -226,8 +241,8 @@
           </div>
         </div>
 
-        <div class="meal">
-          <img src="/src/img/meal-6.jpg" alt="meal" class="meal-image">
+        <div class="meal wow fadeInUp" data-wow-delay="0.6s">
+          <img src="src/img/meal-6.jpg" alt="meal" class="meal-image">
           <div class="meal-info">
             <h3 class="meal-title">Featured Meal</h3>
             <h4 class="meal-subtitle">Served with french fries + drink</h4>
@@ -251,15 +266,15 @@
   </section>
   <!-- /.section dishes -->
 
-  <section class="section chefs">
+  <section id="chefs" class="section chefs">
     <div class="container">
-      <div class="title-wrapper chefs-wrapper">
+      <div class="title-wrapper chefs-wrapper wow slideInUp" data-wow-delay="0.5s">
         <h2 class="section-title chefs-title">This month's chefs</h2>
         <div class="green-line"></div>
       </div>
 
       <div class="chefs-block">
-        <div class="chefs-block-item">
+        <div class="chefs-block-item wow fadeInUp" data-wow-delay="0.2s">
           <div class="chefs-info">
             <img src="src/img/Avatar-1.png" alt="avatar">
             <div class="chefs-text">
@@ -274,7 +289,7 @@
           </div>
         </div>
 
-        <div class="chefs-block-item">
+        <div class="chefs-block-item wow fadeInUp" data-wow-delay="0.4s">
           <div class="chefs-info">
             <img src="src/img/Avatar-2.png" alt="avatar">
             <div class="chefs-text">
@@ -289,7 +304,7 @@
           </div>
         </div>
 
-        <div class="chefs-block-item">
+        <div class="chefs-block-item wow fadeInUp" data-wow-delay="0.6s">
           <div class="chefs-info">
             <img src="src/img/Avatar-3.png" alt="avatar">
             <div class="chefs-text">
@@ -311,14 +326,14 @@
   </section>
   <!-- /.section chefs -->
 
-  <section class="section recipes">
+  <section id="recipes" class="section recipes">
     <div class="container">
-      <div class="title-wrapper recipes-wrapper">
+      <div class="title-wrapper recipes-wrapper wow slideInUp" data-wow-delay="0.5s">
         <h2 class="section-title recipes-title">Recipes From Our Chefs</h2>
         <div class="green-line"></div>
       </div>
 
-      <div class="recipes-block">
+      <div class="recipes-block wow slideInUp" data-wow-delay="0.5s">
         <div class="main-recipe">
           <span class="bgc-span">breakfast</span>
           <p>05 Jul 2016</p>
@@ -408,25 +423,26 @@
         </div>
       </div>
       <!-- /.container -->
+    </div>
   </section>
   <!-- /.section recipes -->
 
   <section class="section social">
     <div class="container">
-      <div class="title-wrapper social-wrapper">
+      <div class="title-wrapper social-wrapper wow slideInUp" data-wow-delay="0.2s">
         <h2 class="section-title social-title">We in Social</h2>
         <div class="green-line"></div>
       </div>
 
       <div class="social-cards">
-        <div class="social-card">
-          <img src="src/img/Twitter Card.png" alt="Twitter Card" class="social-img">
+        <div class="social-card wow fadeInUp" data-wow-delay="0.2s">
+          <img src="src/img/TwitterCard.png" alt="Twitter Card" class="social-img">
         </div>
-        <div class="social-card">
-          <img src="src/img/instagram Card.png" alt="instagram" class="social-img">
+        <div class="social-card wow fadeInUp" data-wow-delay="0.4s">
+          <img src="src/img/instagramCard.png" alt="instagram" class="social-img">
         </div>
-        <div class="social-card">
-          <img src="src/img/Facebook Card.png" alt="Facebook Card" class="social-img">
+        <div class="social-card wow fadeInUp" data-wow-delay="0.6s">
+          <img src="src/img/FacebookCard.png" alt="Facebook Card" class="social-img">
         </div>
         
       </div>
@@ -435,9 +451,9 @@
   </section>
   <!-- /.section social -->
 
-  <footer class="footer">
+  <footer id="contacts" class="footer">
     <div class="container">
-      <div class="info-block footer-info-block">
+      <div class="info-block footer-info-block wow lightSpeedInLeft" data-wow-delay="0.1s">
 
           <div class="info-block-item">
             <img src="./src/img/ic_watch_later.png" alt="watch_later">
@@ -451,7 +467,7 @@
           </div>
           <div class="info-block-item">
             <img src="./src/img/ic_call.png" alt="call">
-            <p>+38 (063)833 24 15</p>
+            <a href="tel:+380638332415">+38 (063)833 24 15</a>
             <span>Call Online</span>
           </div>
         </div>
@@ -461,10 +477,12 @@
 
     <div class="container">
       <div class="footer-nav">
-        <div class="logo footer-logo">
-          <img src="src/img/Logo.png" alt="Logo" class="logo-image">
-          <span class="logo-text">Healthy Switcher</span>
-        </div>
+        <a href="#" class="logo-link">
+          <div class="logo footer-logo">
+            <img src="src/img/Logo.png" alt="Logo" class="logo-image">
+            <span class="logo-text">Healthy Switcher</span>
+          </div>
+        </a>
         <span class="footer-text">© Designed by Yellow Snow. All Rights Reserved.</span>
       </div>
     </div>
@@ -472,6 +490,14 @@
 
   </footer>
   <!-- /.footer -->
+
+  <script src="src/js/jquery-1.11.0.min.js"></script>
+  <script src="src/js/wow.min.js"></script>
+  <script src="//code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="src/js/jquery-migrate-1.2.1.min.js"></script>
+  <script src="src/js/scroll.js"></script>
+  <script src="src/js/slick.min.js"></script>
+  <script src="src/js/main.js"></script>
 
 </body>
 </html>
